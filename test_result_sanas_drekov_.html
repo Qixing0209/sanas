@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Medical Center "SANAS"</title>
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="lang.js"></script>
+	<script src="main.js"></script>
+</head>
+<script>
+	let language = "en".toLowerCase();
+	let guid = "e3de26f4-97a5-11ed-a205-da1e9a74d40c";
+	
+</script>
+<body>
+	
+	<div class="container mt-3">
+		<nav class="navbar navbar-light justify-content-end bg-transparent">
+			<select class="custom-select" id="langSelect" onChange="drawPage(this.options[this.selectedIndex].value);">
+			  <option selected class="en" value="en">English</option>
+			  <option value="ru" class="ru">Русский</option>
+			  <!--<option value="zh" lang="zh">zh</option>
+			  <option value="ko" lang="ko">ko</option>
+			  <option value="ja" lang="ja">ja</option>-->
+			</select>
+		</nav>
+		<h1 id="header"></h1>
+		<table class="table" id="info">
+		  
+		</table>
+	</div>
+</body>
+</html>
